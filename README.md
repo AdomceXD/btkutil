@@ -6,3 +6,9 @@ git clone https://github.com/AdomceXD/btkutil
 cd btkutil
 chmod +x compile
 ```
+
+#Usage:
+```cpp
+#include <btkutil.h>
+...
+```
