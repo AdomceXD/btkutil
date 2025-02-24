@@ -2,6 +2,7 @@
 #include <sys/ioctl.h>
 #include <string>
 
+//BTKmargin:  Allows for printing centered text in the console.
 void BTKmargin(int a){
     struct winsize w;
     ioctl(0, TIOCGWINSZ, &w);
@@ -13,6 +14,7 @@ void BTKmargin(int a){
 
 }
 
+//BTKdebug:  Allows for printing debug messages in the console.
 void BTKdebug(const char* msg, bool endl){
         if(endl==1){
             std::cout << "[\033[33mDEBUG\033[0m] " << msg << "\n";
