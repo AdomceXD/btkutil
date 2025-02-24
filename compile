@@ -1,0 +1,2 @@
+g++ -shared -fPIC -o libbtkutils.so btkutil.cpp -std=c++20
+sudo cp libbtkutils.so /usr/local/lib/
